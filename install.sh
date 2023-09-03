@@ -9,4 +9,5 @@ sudo make clean install && make clean
 cd ../st/
 sudo make clean install && make clean
 
-
+cd ../slstatus/
+sudo make clean install && make clean
