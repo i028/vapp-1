@@ -16,8 +16,10 @@ cd ..
 
 sudo mkdir -p /usr/local/share/fonts && sudo cp -r FiraCode /usr/local/share/fonts/ && fc-cache
 
-cp -r ./config/VSCodium alacritty nvim picom rofi && cp -r ./config/Xresources ~/.Xresources && cp -r ./config/xinitrc ~/.xinitrc
+cd ./config/
 
-sudo pacman -S rofi alacritty
+cp -r VSCodium alacritty nvim picom rofi ~/.config/ && cp -r Xresources ~/.Xresources && cp -r xinitrc ~/.xinitrc
+
+cd ..
 
 
