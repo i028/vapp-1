@@ -11,15 +11,12 @@ sudo make clean install && make clean
 
 cd ../slstatus/
 sudo make clean install && make clean
-
 cd ..
 
 sudo mkdir -p /usr/local/share/fonts && sudo cp -r FiraCode /usr/local/share/fonts/ && fc-cache
 
-cd ./config/
+cp ./config/Xresources ~/.Xresources && cp ./config/xinitrc ~/.xinitrc
 
-cp -r VSCodium alacritty nvim picom rofi ~/.config/ && cp -r Xresources ~/.Xresources && cp -r xinitrc ~/.xinitrc
-
-cd ..
-
+mkdir ~/.config && cd ./config/
+cp -r VSCodium alacritty picom rofi ~/.config/
 
