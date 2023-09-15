@@ -20,3 +20,5 @@ cp ./config/Xresources ~/.Xresources && cp ./config/xinitrc ~/.xinitrc
 mkdir ~/.config && cd ./config/
 cp -r VSCodium alacritty picom rofi ~/.config/
 
+cp -r konsole ~/.local/share/
+
