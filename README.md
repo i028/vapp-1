@@ -4,8 +4,14 @@
 
 + dwm
 + dmenu
++ slstatus
++ slock
 + st
 + alacritty
++ rofi
++ konsole
++ nitrogen
++ picom-ftglabs-git(aur)
 + ranger
 	1. install ueberzug
 	2. (/.config/rc.config)
@@ -13,10 +19,6 @@
 		set preview_images_method ueberzug
 
 
-#### 工具
-
-+ slstatus
-+ slock
 
 #### 截图
 
