@@ -104,8 +104,7 @@ static const Key keys[] = {
 	{ MODKEY|ControlMask,           XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = roficmd } },
 	{ MODKEY|ControlMask,           XK_a,      spawn,          {.v = flamecmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = alacmd } },
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = koncmd } },
 	{ MODKEY|ControlMask,           XK_u,      spawn,          {.v = volup } },
 	{ MODKEY|ControlMask,           XK_d,      spawn,          {.v = voldow } },
@@ -117,7 +116,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY,                       XK_Return, spawn,          {.v = alacmd } },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
@@ -164,6 +163,5 @@ static const Button buttons[] = {
 	{ ClkTagBar,            0,              Button1,        view,           {0} },
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
-	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
 
