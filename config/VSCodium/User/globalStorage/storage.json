@@ -64,45 +64,12 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/vv/vapp/dwm/script/vol.sh",
-                                        "path": "/home/vv/vapp/dwm/script/vol.sh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/vapp/dwm/script/vol.sh"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/vv/vv/i028%20token.txt",
-                                        "path": "/home/vv/vv/i028 token.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/vv/i028 token.txt"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/vv/.config/nvim/plug/everforest/colors/everforest.vim",
                                         "path": "/home/vv/.config/nvim/plug/everforest/colors/everforest.vim",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/.config/nvim/plug/everforest/colors/everforest.vim"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/vv/vv/Arch%20Linux%20Notes.txt",
-                                        "path": "/home/vv/vv/Arch Linux Notes.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/vv/Arch Linux Notes.txt"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -207,11 +174,13 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "保存(&&S)"
+                        "label": "保存(&&S)",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "另存为(&&A)..."
+                        "label": "另存为(&&A)...",
+                        "enabled": false
                     },
                     {
                         "id": "saveAll",
@@ -264,7 +233,7 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.showProfileContents",
-                                                "label": "Show Profile Contents"
+                                                "label": "显示配置文件内容"
                                             },
                                             {
                                                 "id": "vscode.menubar.separator"
@@ -350,11 +319,13 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "还原文件(&&V)"
+                        "label": "还原文件(&&V)",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "关闭编辑器(&&C)"
+                        "label": "关闭编辑器(&&C)",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -399,11 +370,13 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "查找(&&F)"
+                        "label": "查找(&&F)",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "替换(&&R)"
+                        "label": "替换(&&R)",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -635,6 +608,10 @@
                                     "checked": true
                                 },
                                 {
+                                    "id": "editor.action.toggleStickyScroll",
+                                    "label": "粘滞滚动(&&S)"
+                                },
+                                {
                                     "id": "editor.action.toggleRenderWhitespace",
                                     "label": "显示空格(&&R)",
                                     "checked": true
@@ -782,11 +759,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "自动换行(&&W)"
-                    },
-                    {
-                        "id": "editor.action.toggleStickyScroll",
-                        "label": "粘滞滚动(&&S)"
+                        "label": "自动换行(&&W)",
+                        "enabled": false
                     }
                 ]
             },
@@ -794,7 +768,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "返回(&&B)"
+                        "label": "返回(&&B)",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1212,10 +1187,6 @@
                     },
                     {
                         "id": "vscode.menubar.separator"
-                    },
-                    {
-                        "id": "workbench.action.openTwitterUrl",
-                        "label": "Twitter 上和我们互动(&&J)"
                     },
                     {
                         "id": "workbench.action.openRequestFeatureUrl",
@@ -1702,19 +1673,19 @@
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#273136",
+    "themeBackground": "#263238",
     "windowSplash": {
         "zoomLevel": 0.6,
         "baseTheme": "vs-dark",
         "colorInfo": {
-            "foreground": "#e1e2e3",
-            "background": "#273136",
-            "editorBackground": "#273136",
-            "titleBarBackground": "#22282b",
-            "activityBarBackground": "#1c1e1f",
-            "sideBarBackground": "#22282b",
-            "statusBarBackground": "#22282b",
-            "statusBarNoFolderBackground": "#22282b"
+            "foreground": "#cccccc",
+            "background": "#263238",
+            "editorBackground": "#263238",
+            "titleBarBackground": "#192227",
+            "activityBarBackground": "#192227",
+            "sideBarBackground": "#192227",
+            "statusBarBackground": "#192227",
+            "statusBarNoFolderBackground": "#263238"
         },
         "layoutInfo": {
             "sideBarSide": "left",
