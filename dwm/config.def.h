@@ -103,7 +103,7 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY|ControlMask,           XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = roficmd } },
-	{ MODKEY|ControlMask,           XK_a,      spawn,          {.v = flamecmd } },
+	{ Mod1Mask|ControlMask,           XK_a,      spawn,          {.v = flamecmd } },
 	{ MODKEY|ShiftMask,             XK_s, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = alacmd } },
 	{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = koncmd } },
